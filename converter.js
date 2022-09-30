@@ -1,6 +1,6 @@
 const convertTemp = () =>{
 
-        const numTemp = document.getElementById('number').value;
+        const numTemp = document.getElementById('number_info').value;
         const selectVal = document.getElementById('seloptions');
         const selValues = seloptions.options[selectVal.selectedIndex].value;
 
@@ -23,4 +23,10 @@ const convertTemp = () =>{
             result = fehToCel(numTemp);
             document.getElementById('rescontainer').innerHTML= result + ' Celcius';
         }
+        document.getElementsById("number_info").innerHTML ="";
+}
+
+const clear_btn =() =>{
+    
+    document.getElementById("rescontainer").innerHTML ="Your Result Here";
 }

@@ -33,8 +33,8 @@ h1{
     background-color: whitesmoke;
     border: none;
     width: 50vw;
-    height: 50vh;
-    display: flex;
+    height: 90vh;
+    padding: 15px;
     align-items: center;
     justify-content: center;
     box-shadow: 10px 15px 15px grey;
@@ -47,11 +47,16 @@ label{
 
 .container{
     width:35%;
-    height:50%;
+    height: 90%;
+}
+#number_info{
+    margin: 1rem;
+    width: 25rem;
+    height: 4em;
 }
 input{
-    width: 90%;
-    height: 25%;
+    width: 20%;
+    height: 20%;
 }
 
 input::placeholder{
@@ -59,20 +64,29 @@ input::placeholder{
 }
 
 #seloptions{
-    margin: 10px;
-    width: 60%;
-    height: 20%;
+    margin-left: 13rem;
+    margin-top: 2rem;
+    width: 10rem;
+    height: 3rem;
 }
 
 input[type=submit]{
-    background-color: rgb(46, 146, 46);
+    margin: 3rem;
     color: aliceblue;
-    width: 75%;
+    width: 30%;
     height: 20%;
 }
-
+input[type=clear]{
+    color: aliceblue;
+    width: 30%;
+    height: 20%;
+}
 #rescontainer{
     font-size: larger;
-    margin: 10px;
+    margin: 10rem;
+    padding: 2rem;
+    border-radius: 30%;
+    border: dotted 2px black;
+    box-shadow: 4px 2px 4px grey;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

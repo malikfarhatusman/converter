@@ -1,36 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-        <title>Temperature Converter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Temperature</title>
+
 </head>
+
 <body>
-    <h1>Temperature Converter</h1>
+    
     <div class="wrapper">
-        <div class="container"  >
+        <h1>Temperature Converter</h1>
+        <div class="container">
             <label for="celsius">Celsius</label>
-            <input type="number" name="celsius" id="number" placeholder="Enter value">
+            <input type="number" name="celsius" id="number_info" placeholder="Enter value">
             <select name="seloptions" id="seloptions">
                 <option value="cels">Celsius</option>
                 <option value="fahr">Fahrenheit </option>
             </select>
             <br />
-            <input type="submit" class="button" onclick="convertTemp(); return false">
+            <input type="submit" class="btn btn-primary" onclick="convertTemp(); return false">
+                    <input type="clear" class="btn btn-danger" value="clear" onclick= "clear_btn()">
             <br />
             <span id="rescontainer">
                 Your Result Here:
             </span>
-           
+
         </div>
-       
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+        <script src="converter.js"></script>
     </div>
 
-    <script src="converter.js"></script>
-   
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
